@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Movie: Name"
+        android:background="#2588ea"
+        android:textColor="#ffffff"
+        android:id="@+id/tvMovieTitle"
+        android:padding="5dp"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvMovieType"
+                android:text="Type:"
+                android:textSize="18sp"
+                android:textColor="#4e4d4d"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvMovieYear"
+                android:text="Year:"
+                android:textSize="18sp"
+                android:textColor="#4e4d4d"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvMovieRating"
+                android:text="Rating:"
+                android:textSize="18sp"
+                android:textColor="#4e4d4d"
+                />
+        </LinearLayout>
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/ivMovie"
+            android:layout_margin="5dp"
+            />
+    </LinearLayout>
+    <View
+        android:layout_marginTop="14dp"
+        android:layout_width="match_parent"
+        android:layout_height="4px"
+        android:background="#f4eaea"/>
+</LinearLayout>
